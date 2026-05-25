@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Courier New', monospace;
-    background: linear-gradient(135deg, #1a1a2e 0%, #2a2a4a 100%);
+    background: radial-gradient(circle at center, #ffb6c1, #2a1a3a);
     min-height: 100vh;
     display: flex;
     justify-content: center;
