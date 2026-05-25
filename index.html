@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claw Machine - Sticker Hunter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🦀 CLAW MACHINE</h1>
+        <p class="subtitle">Move ← → and press SPACE to drop</p>
+        
+        <canvas id="gameCanvas" width="500" height="400"></canvas>
+        
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-label">🎁 Prizes</span>
+                <span class="stat-value" id="prizeCount">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">🪙 Credits</span>
+                <span class="stat-value" id="credits">5</span>
+            </div>
+        </div>
+        
+        <button id="playBtn" class="play-btn">🕹️ PLAY (Cost: 1 credit)</button>
+        <button id="resetBtn" class="reset-btn">🔄 Reset Game</button>
+        
+        <div class="prizes-won" id="prizesWon">
+            <strong>Your Stickers:</strong> None yet
+        </div>
+        
+        <div class="app-footer">
+            Coded by <strong>Snethemba Shangase</strong> 🖤 | 
+            <a href="#">GitHub</a> | 
+            <a href="#">Netlify</a>
+        </div>
+    </div>
+    
+    <script src="claw.js"></script>
+</body>
+</html>
