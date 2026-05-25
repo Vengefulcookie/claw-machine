@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Claw Machine - Sticker Hunter</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>🦀 CLAW MACHINE</h1>
-        <p class="subtitle">Move ← → and press SPACE to drop</p>
+        <p class="subtitle">← → move &nbsp;|&nbsp; ␣ drop &nbsp;|&nbsp; 🎮 Play costs 1 credit</p>
         
         <canvas id="gameCanvas" width="500" height="400"></canvas>
-        
+        <!-- Audio will play after first user interaction -->
         <div class="stats">
             <div class="stat">
                 <span class="stat-label">🎁 Prizes</span>
@@ -24,11 +24,20 @@
             </div>
         </div>
         
-        <button id="playBtn" class="play-btn">🕹️ PLAY (Cost: 1 credit)</button>
+        <button id="playBtn" class="play-btn">🕹️ PLAY (1 credit)</button>
         <button id="resetBtn" class="reset-btn">🔄 Reset Game</button>
         
         <div class="prizes-won" id="prizesWon">
             <strong>Your Stickers:</strong> None yet
+        </div>
+        
+        <div id="popupOverlay" class="popup-overlay" style="display: none;">
+            <div class="popup-card">
+                <div class="popup-emoji" id="popupEmoji">🎁</div>
+                <div class="popup-title" id="popupTitle">You Won!</div>
+                <div class="popup-fact" id="popupFact">Loading facts...</div>
+                <button id="collectBtn" class="collect-btn">✨ COLLECT STICKER ✨</button>
+            </div>
         </div>
         
         <div class="app-footer">
