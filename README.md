@@ -32,7 +32,7 @@ Physics simulation was the hardest part of this game. The claw needed to feel re
 git clone https://github.com/Vengefulcookie/claw-machine.git
 cd claw-machine
 ```
-#Open index.html in your browser
+Note: Open index.html in your browser
 
 ## Contact
 - GitHub: github.com/Vengefulcookie
